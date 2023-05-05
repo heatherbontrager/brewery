@@ -1,0 +1,71 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+clear: both;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+h1{
+  color: wheat;
+}
+
+h2{
+  color: wheat;
+}
+
+ul{
+  list-style: none;
+  text-align: left;
+}
+
+
+body{
+  background-image: url('https://res.cloudinary.com/de823dozq/image/upload/v1679691394/brewery_sgh2co.jpg');
+  background-size: auto cover fixed;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+
+@media all and (max-width: 700px) {
+  body{
+      background-image: auto contain;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      width: 100%;
+  }
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
